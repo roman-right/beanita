@@ -4,6 +4,16 @@ Local MongoDB-like database, based on [Mongita](https://github.com/scottrogowski
 
 I highly recommend using it only for experiment purposes. It is safer to use a real MongoDB database and for testing, and for production.
 
+### Install
+
+```shell
+pip install beanita
+```
+or
+```shell
+poetry add beanita
+```
+
 ### Init
 
 ```python
