@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "beanita"
+version = "0.1.0"
+description = "Local MongoDB-like database, based on Mongita and prepared to work with Beanie ODM"
+authors = ["Roman Right <roman-right@protonmail.com>"]
+homepage = "https://github.com/roman-right/beanita"
+repository = "https://github.com/roman-right/beanita"
+readme = "README.md"
+license = "MIT"
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+mongita = "^1.1.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+beanie = "^1.11.4"
+pytest-aiohttp = "^0.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
